@@ -1,0 +1,6 @@
+message Metric {
+  required string name = 1;
+  required string unit_value = 2;
+  required MetricValue[] value = 3;
+  optional bool less_is_better = 4;
+}
