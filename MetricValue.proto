@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-import "google/protobuf/timestamp.proto";
-
-message MetricValue {
-    required google.protobuf.Timestamp date = 1;
-    required double value = 2;
-}

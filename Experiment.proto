@@ -3,16 +3,16 @@ syntax = "proto3";
 import "google/protobuf/timestamp.proto";
 
 message Experiment {
-    required string id = 1;
-    required string name = 2;
-    optional string description = 3;
-    required Metric[] metrics = 4;
-    required timestamp created = 5;
-    optional timestamp completed = 6;
-    enum Status {
-        NOT_STARTED = 0;
-        ACTIVE = 1;
-        COMPLETED = 2;    
-    }
-    required Status status = 7;
+	optional string id = 1;
+	optional string name = 2;
+	optional string description = 3;
+	repeated string metrics = 4;
+	optional google.protobuf.Timestamp created = 5;
+	optional google.protobuf.Timestamp completed = 6;
+	enum Status {
+		NOT_STARTED = 0;
+		ACTIVE = 1;
+		COMPLETED = 2;    
+	}
+	optional Status status = 7;
 }
