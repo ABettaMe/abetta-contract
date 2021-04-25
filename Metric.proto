@@ -3,13 +3,13 @@ syntax = "proto3";
 import "google/protobuf/timestamp.proto";
 
 message MetricValue {
-	optional google.protobuf.Timestamp date = 1;
-	optional double value = 2;
+	google.protobuf.Timestamp date = 1;
+	double value = 2;
 }
 
 message Metric {
-	optional string name = 1;
-	optional string unit_value = 2;
+	string name = 1;
+	string unit_value = 2;
 	repeated MetricValue value = 3;
-	optional bool less_is_better = 4;
+	bool less_is_better = 4;
 }

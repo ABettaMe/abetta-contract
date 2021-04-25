@@ -1,6 +1,6 @@
 syntax = "proto3";
 
 message User {
-	optional string id = 1;
-	optional string experiment_ids = 2;
+	string id = 1;
+	string experiment_ids = 2;
 }
