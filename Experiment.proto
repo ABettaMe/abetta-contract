@@ -18,4 +18,5 @@ message Experiment {
 	}
 	Status status = 8;
 	string description_treatment = 9;
+	repeated Recommendation recommendations = 10;
 }
