@@ -2,5 +2,5 @@ syntax = "proto3";
 
 message User {
 	string id = 1;
-	string experiment_ids = 2;
+	repeated string experiment_ids = 2;
 }
