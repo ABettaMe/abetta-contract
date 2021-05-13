@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "Metric.proto";
+
+message Recommendation {
+	string id = 1;
+	string experiment_id = 2;
+    Metric metric = 3;
+    double avg_Control = 4;
+    double avg_Treatment = 5;
+    double pValue = 6;
+    string explanation = 7;
+}
