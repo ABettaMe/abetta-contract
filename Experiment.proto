@@ -2,6 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
 import "Metric.proto";
+import "Recommendation.proto";
 
 message Experiment {
 	string id = 1;
