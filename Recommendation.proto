@@ -3,10 +3,9 @@ import "Metric.proto";
 
 message Recommendation {
 	string id = 1;
-	string experiment_id = 2;
-    Metric metric = 3;
-    double avg_Control = 4;
-    double avg_Treatment = 5;
-    double pValue = 6;
-    string explanation = 7;
+    Metric metric_control = 2;
+    Metric metric_treatment = 3;
+    double avg_control = 4;
+    double avg_treatment = 5;
+    double p_value = 6;
 }
